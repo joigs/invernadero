@@ -76,8 +76,8 @@ def actualizarDatos2(plant_id, expected_humidity, type_plant):
 
 def actualizarDatosM(piso,mapa):
     con, cur = conectar()
-    cur.execute("UPDATE mapas SET 1 = ?, 2 = ?, 3 = =, 4 = ?, 5 = ?, 6 = ?, 7 = ?, 8 = ?, 9 = ?, 10 = ? WHERE piso = ?",
-                (mapa[0],mapa[1],mapa[2],mapa[3],mapa[4],mapa[5],mapa[6],mapa[7],mapa[8],mapa[9],mapa[10],piso))
+    cur.execute("UPDATE mapas SET '1' = ?, '2' = ?, '3' = ?, '4' = ?, '5' = ?, '6' = ?, '7' = ?, '8' = ?, '9' = ?, '10' = ? WHERE piso = ?",
+                (mapa[0],mapa[1],mapa[2],mapa[3],mapa[4],mapa[5],mapa[6],mapa[7],mapa[8],mapa[9],piso))
     con.commit()
     con.close()
     print("datos del mapa actualizados correctamente")
