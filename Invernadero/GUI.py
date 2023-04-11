@@ -4,7 +4,6 @@ from tkinter import ttk
 from tkinter import messagebox
 from PIL import Image, ImageTk
 import sprites
-import mapa
 import funciones
 from robot import *
 import time
